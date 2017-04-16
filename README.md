@@ -33,6 +33,8 @@ According to this wiring diagram.
 * [SN74HC595 data sheet](http://www.ti.com/lit/ds/symlink/sn74hc595.pdf)
 * [Power dock spec](https://docs.onion.io/omega2-docs/power-dock.html)
 * [Article on Bildr.org about the 74HC595](http://bildr.org/2011/02/74hc595/)
+* [Using the GPIOs on the Omega 2](https://docs.onion.io/omega2-docs/using-gpios.html)
+# [MediaTek MT7688 Datasheet](http://www.hmangas.com/Electronica/Datasheets/.../MT7688_Datasheet_v1_4.pdf)
 
 # Using a SN74HC595 Shift Register with SPI & Python
 
@@ -70,6 +72,8 @@ omega2-ctrl gpiomux get
 python index.py
 ```
 
+You will see the binary counter working (see the LEDs) and reading the last input back from the shift register (on the console).
+
 ## Wiring
 
 According to this wiring diagram.
@@ -81,6 +85,7 @@ According to this wiring diagram.
 * [Power dock spec](https://docs.onion.io/omega2-docs/power-dock.html)
 * [Multiplexed GPIOs](https://docs.onion.io/omega2-docs/using-gpios.html#using-gpios-multiplexing)
 * [SPI Python Module](https://docs.onion.io/omega2-docs/spi-python-module.html)
+# [MediaTek MT7688 Datasheet](http://www.hmangas.com/Electronica/Datasheets/.../MT7688_Datasheet_v1_4.pdf)
 
 # Cheat sheet
 

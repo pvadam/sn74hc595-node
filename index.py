@@ -21,17 +21,25 @@ print 'SPI MOSI GPIO: %d'%(spi.mosi)
 print 'SPI Speed: %d Hz (%d kHz)'%(spi.speed, spi.speed/1000)
 print 'Mode: %d, Mode Bits: 0x%x, CS-High: %d'%(spi.mode, spi.modeBits, spi.csHigh)
 
-print 'Check success %d'%(spi.checkDevice())
+print 'Check success (should be zero) %d'%(spi.checkDevice())
 
 ### start the loop
 count = 0
-while (count < 10):
-  if count % 2 == 0:
-    vals = [0b1111]
-  else:
-    vals = [0b0000]
-  ret = spi.write(vals)
+while (count < 1000):
+  vals = [count]
+
+  ## uncomment this part for basic flashing (no counting)
+  # if count % 2 == 0:
+  #   vals = [0b1111]
+  # else:
+  #   vals = [0b0000]
+
+  spi.write(vals)
+
   sleep(0.5)
+  
+  rdVal = spi.readBytes(0x00, 1)
+  print 'Read back (MISO - QH`): ', bin(rdVal[0]), rdVal[0]
 
   print 'Flash count:', count
   count = count + 1
