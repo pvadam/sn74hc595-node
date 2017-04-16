@@ -85,7 +85,7 @@ According to this wiring diagram.
 * [Power dock spec](https://docs.onion.io/omega2-docs/power-dock.html)
 * [Multiplexed GPIOs](https://docs.onion.io/omega2-docs/using-gpios.html#using-gpios-multiplexing)
 * [SPI Python Module](https://docs.onion.io/omega2-docs/spi-python-module.html)
-# [MediaTek MT7688 Datasheet](http://www.hmangas.com/Electronica/Datasheets/.../MT7688_Datasheet_v1_4.pdf)
+* [MediaTek MT7688 Datasheet](http://www.hmangas.com/Electronica/Datasheets/.../MT7688_Datasheet_v1_4.pdf)
 
 # Cheat sheet
 
